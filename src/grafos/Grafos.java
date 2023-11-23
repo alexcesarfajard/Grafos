@@ -3,8 +3,7 @@ package grafos;
 public class Grafos {
 
     public static void main(String[] args) {
-        // TODO code application logic here
-        
+        // TODO code application logic here 
         Grafo g = new Grafo(6);
         
         g.agregarArista(0, 1);
@@ -16,6 +15,9 @@ public class Grafos {
         g.agregarArista(0, 4);
         
         g.imprimirMatrizAdyacencia();
+        
+        g.recorrerProfundidad(3);
+        g.recorridoAmplitud(3);
     }
     
 }
