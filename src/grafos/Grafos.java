@@ -1,20 +1,21 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
 package grafos;
 
-/**
- *
- * @author Usuario
- */
 public class Grafos {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
         // TODO code application logic here
+        
+        Grafo g = new Grafo(6);
+        
+        g.agregarArista(0, 1);
+        g.agregarArista(1, 2);
+        g.agregarArista(2, 3);
+        g.agregarArista(3, 4);
+        g.agregarArista(4, 5);
+        g.agregarArista(1, 3);
+        g.agregarArista(0, 4);
+        
+        g.imprimirMatrizAdyacencia();
     }
     
 }
